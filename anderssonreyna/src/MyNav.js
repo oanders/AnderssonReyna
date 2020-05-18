@@ -19,11 +19,11 @@ function MyNav() {
   return (
     <Router>
       <Navbar bg="light" expand="lg">
-        <Navbar.Brand href="home">Andersson-Reyna</Navbar.Brand>
+        <Navbar.Brand href="/">Andersson-Reyna</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link href="/home">Home</Nav.Link>
+            <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="link">Link</Nav.Link>
             <Nav.Link href="/about">About</Nav.Link>
             <NavDropdown title="Oskar" id="basic-nav-dropdown">
@@ -49,10 +49,12 @@ function MyNav() {
           </Form>
         </Navbar.Collapse>
       </Navbar>
+      <Switch>
         <Route path="/about" component={About}></Route>
         <Route path="/steffy" component={Steffy}></Route>
         <Route path="/oskar" component={Oskar}></Route>
-        <Route path="/home" component={Home}></Route>
+        <Route path="/" component={Home}></Route>
+      </Switch>
       </Router>
   );
 }
