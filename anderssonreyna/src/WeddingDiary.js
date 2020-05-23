@@ -1,17 +1,16 @@
 import React from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import oskar_steffy from "./images/oskar_steffy.png";
 import Image from "react-bootstrap/Image";
+import oskar_steffy from "./images/oskar_steffy.png";
+import wedding_logo from "./images/wedding_logo.png";
 
 function WeddingDiary() {
   return (
     <div className="Wedding-Home">
       <div class="container">
         <div class="jumbotron text-center">
-          <h1 className="WeddingDiary-Title">
-            <strong>Oskar and Steffany</strong>
-          </h1>
+          <Image src={wedding_logo} rounded />
           <p class="lead">15 May 2021</p>
           <h2>Welcome to our Wedding's website!</h2>
           <br></br>
