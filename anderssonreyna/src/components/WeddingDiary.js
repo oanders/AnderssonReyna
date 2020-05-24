@@ -1,12 +1,11 @@
 import React from "react";
-import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Image from "react-bootstrap/Image";
-import oskar_steffy from "./images/oskar_steffy.png";
-import wedding_logo from "./images/wedding_logo.png";
-import wedding_bells from "./images/wedding_bells.png";
-import wedding_reception from "./images/wedding_reception.png";
-import wedding_party from "./images/wedding_party.png";
+import oskar_steffy from "./../images/oskar_steffy.png";
+import wedding_logo from "./../images/wedding_logo.png";
+import wedding_bells from "./../images/wedding_bells.png";
+import wedding_reception from "./../images/wedding_reception.png";
+import wedding_party from "./../images/wedding_party.png";
 
 function WeeklyNews() {
   return <div>WEEKLY NEWS SHOULD COME HERE</div>;
