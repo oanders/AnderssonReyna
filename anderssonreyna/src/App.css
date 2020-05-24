@@ -27,6 +27,12 @@
 .Home {
   text-align: left;
 }
+.Wedding-Home {
+  color: #8b7b8b;
+}
+.Ceremony-Column {
+  text-align: justify;
+}
 
 @keyframes App-logo-spin {
   from {
