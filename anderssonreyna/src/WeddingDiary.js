@@ -1,11 +1,12 @@
 import React from "react";
+import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Image from "react-bootstrap/Image";
-import oskar_steffy from "./../images/oskar_steffy.png";
-import wedding_logo from "./../images/wedding_logo.png";
-import wedding_bells from "./../images/wedding_bells.png";
-import wedding_reception from "./../images/wedding_reception.png";
-import wedding_party from "./../images/wedding_party.png";
+import oskar_steffy from "./images/oskar_steffy.png";
+import wedding_logo from "./images/wedding_logo.png";
+import wedding_bells from "./images/wedding_bells.png";
+import wedding_reception from "./images/wedding_reception.png";
+import wedding_party from "./images/wedding_party.png";
 
 function WeeklyNews() {
   return <div>WEEKLY NEWS SHOULD COME HERE</div>;
@@ -22,75 +23,57 @@ function WeddingRegistration() {
         <strong> Save-the-Date</strong> cards have been sent out to our
         beautiful guests.
       </p>
-      <br></br>
-      <div>
-        <form>
-          <div class="row form-group">
-            <div class="col">
-              <label for="inputName">Name </label>
-              <input
-                type="text"
-                class="form-control input-lg"
-                placeholder="Full Name"
-                id="inputName"
-              />
-            </div>
-            <div class="col">
-              <label for="inputAddress">Address </label>
-              <input
-                type="text"
-                class="form-control input-lg"
-                placeholder="Street Nr, Postcode, City, Country"
-                id="inputAddress"
-              />
-            </div>
-          </div>
-          <div class="row form-group">
-            <div class="col">
-              <label for="inputEmail">Email </label>
-              <input
-                type="text"
-                class="form-control input-lg"
-                placeholder="Email Address"
-                id="inputEmail"
-              />
-            </div>
-            <div class="col inputlg">
-              <label for="inputMobile">Mobile </label>
-              <input
-                type="text"
-                class="form-control input-lg"
-                placeholder="Mobile Number"
-                id="inputMobile"
-              />
-            </div>
-          </div>
-        </form>
 
-        <form>
-          <label for="row form-group">Attendance Response </label>
-          <div class="row form-group">
-            <div class="col">
-              <select class="custom-select" id="inputGroupSelect01">
-                <option selected>What will you be attending?</option>
-                <option value="1">1. Ceremony</option>
-                <option value="2">2. Reception</option>
-                <option value="3">3. Party</option>
-                <option value="4">4. All of The Above</option>
-              </select>
-            </div>
-            <div class="col">
-              <select class="custom-select" id="inputGroupSelect02">
-                <option selected>
-                  Number of seats you would like to reserve?
-                </option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">I will bring children</option>
-              </select>
-            </div>
-          </div>
-        </form>
+      <form>
+        <div class="form-group">
+          <label for="inputlg">Full Name</label>
+          <input
+            class="form-control input-lg"
+            id="inputlg"
+            type="text"
+            placeholder="Enter name"
+          />
+        </div>
+        <div class="form-group">
+          <label for="inputlg">Address</label>
+          <input
+            class="form-control input-lg"
+            id="inputlg"
+            type="text"
+            placeholder="Street Nr, Postcode, City, Country"
+          />
+        </div>
+        <div class="form-group">
+          <label for="inputlg">Mobile Number</label>
+          <input
+            class="form-control input-sm"
+            id="inputlg"
+            type="text"
+            placeholder="Enter mobile number"
+          />
+        </div>
+      </form>
+
+      <div class="input-group mb-3">
+        <select class="custom-select" id="inputGroupSelect01">
+          <option selected>What will you be attending?</option>
+          <option value="1">1. Ceremony</option>
+          <option value="2">2. Reception</option>
+          <option value="3">3. Party</option>
+          <option value="4">4. All of The Above</option>
+        </select>
+      </div>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <label class="input-group-text" for="inputGroupSelect02">
+            Number of seats you would like to reserve?
+          </label>
+        </div>
+        <select class="custom-select" id="inputGroupSelect02">
+          <option selected>1</option>
+          <option value="2">2</option>
+          <option value="3">I will bring children</option>
+        </select>
       </div>
     </div>
   );
@@ -163,12 +146,6 @@ function WeddingDiary() {
                   Guests will be able to sign the Guest-book at the venue's
                   entrance. They will also enjoy a welcome drink while waiting
                   for the Bride & Groom to arrive at the venue.
-                </p>
-                <p class="text-left font-italic">
-                  <strong>
-                    <u>NOTE:</u>
-                  </strong>{" "}
-                  In case of any food allergies, please contact us.
                 </p>
               </div>
               <div class="col-sm">
