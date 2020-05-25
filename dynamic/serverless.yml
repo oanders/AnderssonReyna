@@ -8,7 +8,7 @@ plugins:
   - serverless-dynamodb-local
 
 custom:
-  tableName: "users-table-${self:provider.stage}"
+  tableName: "wedding-guests-table-${self:provider.stage}"
   wsgi:
     app: app.app
     packRequirements: false
@@ -35,9 +35,9 @@ provider:
         - dynamodb:UpdateItem
         - dynamodb:DeleteItem
       Resource:
-        - { "Fn::GetAtt": ["UsersDynamoDBTable", "Arn"] }
+        - { "Fn::GetAtt": ["WeddingGuestsTable", "Arn"] }
   environment:
-    USERS_TABLE: ${self:custom.tableName}
+    GUESTS_TABLE: ${self:custom.tableName}
 
 functions:
   app:
@@ -48,14 +48,14 @@ functions:
 
 resources:
   Resources:
-    UsersDynamoDBTable:
+    WeddingGuestsTable:
       Type: "AWS::DynamoDB::Table"
       Properties:
         AttributeDefinitions:
-          - AttributeName: userId
+          - AttributeName: guestId
             AttributeType: S
         KeySchema:
-          - AttributeName: userId
+          - AttributeName: guestId
             KeyType: HASH
         ProvisionedThroughput:
           ReadCapacityUnits: 1

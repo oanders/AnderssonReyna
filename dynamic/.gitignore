@@ -5,3 +5,4 @@
 /.serverless
 /.vscode
 /__pycache__
+/.dynamodb
