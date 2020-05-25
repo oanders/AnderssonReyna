@@ -12,11 +12,6 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <div>
-        <h1 className="Main-header">
-          <i>Andersson Reyna Personal Website</i>
-        </h1>
-      </div>
       <Router>
         <MyNav />
         <Route exact path="/about" component={About}></Route>

@@ -28,6 +28,7 @@
 }
 .Wedding-Home {
   color: #8b7b8b;
+  overflow: scroll;
 }
 .Ceremony-Column {
   text-align: justify;
